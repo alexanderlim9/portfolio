@@ -7,14 +7,30 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div className="container">
+      <div className="block hero">
+          <h1>Alex Lim is a creative developer, designer, and journalist telling stories through data and the web.</h1>
+      </div>
+      <div className="block work">
+          <p>Right now he's an Engineering Apprentice at <a className="inline-link" href="https://www.upstatement.com/" target="_blank">Upstatement </a> 
+               where he focuses on data visualization.</p>
+          <p>He's grateful to have worked on both <a className="inline-link" href="https://sinceparkland.org/" target="_blank">Since
+                  Parkland</a> and <a className="inline-link" href="https://apps.bostonglobe.com/magazine/graphics/2019/01/17/valedictorians/"
+                  target="_blank">The Valedictorians Project</a>, especially after seeing the public response and
+              dialogue that each one sparked. (More on these coming soon)</p>
+          <p>Alex is entering his senior year at Northeastern University. You'll see him in a cap and gown in May 2020!
+              🎓</p>
+      </div>
+      <div className="block contact-list">
+        <ul>
+          <li><a className="inline-link" href="https://drive.google.com/file/d/1zF072kQNKQPQhD6xce9yK67ForGWj9Rv/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a className="inline-link" href="https://github.com/alexanderlim9" target="_blank">Github</a></li>
+          <li><a className="inline-link" href="https://www.linkedin.com/in/alexander-lim/" target="_blank">LinkedIn</a></li>
+          <li><a className="inline-link" href="https://twitter.com/journalims" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+      
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

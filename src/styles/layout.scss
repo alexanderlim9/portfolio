@@ -1,0 +1,139 @@
+
+// ----------------------------------------
+// mixins 
+// ----------------------------------------
+
+@mixin media($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin primary-type() {
+    font-family: ff-ernestine-pro, serif;
+    font-style: normal;
+}
+
+@mixin h1-text() {
+    @include primary-type;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+@mixin body-text() {
+    @include primary-type;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+// ----------------------------------------
+// variables 
+// ----------------------------------------
+
+// breakpoints
+$mobile: 450px;
+$tablet: 768px;
+$sm: 960px;
+$md: 1200px;
+$lg: 1400px;
+$xl: 1800px;
+
+$bkg: #FFF8DC; // cornsilk
+$active: #B22222; // firebrick
+$text-color: #000;
+
+// ----------------------------------------
+// typography 
+// ----------------------------------------
+
+h1 {
+    @include h1-text;
+}
+
+p {
+    @include body-text;
+}
+
+// ----------------------------------------
+// layout 
+// ----------------------------------------
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $bkg;
+}
+
+.block {
+    padding: 8px;
+
+    @include media($tablet) {
+        width: 600px;
+    }
+}
+
+.hero {
+    @include media($tablet) {
+        margin-top: 70px;
+    }
+
+    // @include media($sm) {
+    //     width: 700px;
+    //     h1 {
+    //         font-size: 2.5em;
+    //     }
+    // }
+}
+
+// ----------------------------------------
+// links 
+// ----------------------------------------
+
+a, a:visited {
+    text-decoration: none;
+    color: $text-color;
+}
+
+a:hover {
+    color: $active;
+}
+
+.inline-link {
+    font-weight: 700;
+}
+
+// ----------------------------------------
+// lists 
+// ----------------------------------------
+
+ul {
+    list-style: none;
+    margin-top: -16px;
+    a {
+        @include body-text;
+    }
+}
+
+// ----------------------------------------
+// footer 
+// ----------------------------------------
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 16px;
+}
+
+.copyright {
+    @include primary-type;
+    font-size: .8em;
+    opacity: .5;
+}
