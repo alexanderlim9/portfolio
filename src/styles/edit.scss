@@ -1,0 +1,213 @@
+
+// ----------------------------------------
+// mixins 
+// ----------------------------------------
+
+@mixin media($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@font-face {
+    font-family: 'Cheltenham';
+    src: url('../../static/CheltenhamStd-Light.otf') format('WOFF2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@mixin primary-type() {
+    font-family: 'Georgia', serif;
+    font-style: normal;
+}
+
+@mixin h1-text() {
+    font-family: 'Cheltenham', 'Georgia', serif;
+    font-style: normal;
+    font-size: 3em;
+    line-height: 1em;
+}
+
+@mixin h2-text() {
+    @include h1-text();
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
+
+@mixin body-text() {
+    @include primary-type;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $text-color;
+}
+
+// ----------------------------------------
+// variables 
+// ----------------------------------------
+
+// breakpoints
+$mobile: 450px;
+$tablet: 768px;
+$sm: 960px;
+$md: 1200px;
+$lg: 1500px;
+$xl: 1800px;
+
+$bkg: #FFFFFF; // white
+$active: #FF7500; // Pantone 2018 C
+$text-color: #333; // black
+
+// ----------------------------------------
+// typography 
+// ----------------------------------------
+.edit-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $bkg;
+        
+    h1 {
+        @include h1-text;
+    }
+
+    h2 {
+        @include h2-text();
+    }
+    p {
+        @include body-text;
+        margin: 1.5em 0;
+    }
+
+    // ----------------------------------------
+    // layout 
+    // ----------------------------------------
+
+    body {
+        margin: 0;
+    }
+
+    .block {
+        padding: 8px;
+
+        @include media($tablet) {
+            width: 600px;
+        }
+    }
+
+    // ----------------------------------------
+    // nav 
+    // ----------------------------------------
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        #nyt-logo {
+            width: 215px;
+            padding: 8px;
+            margin-top: 5px;
+        }
+    
+        #hamburger, #profile-icon {
+            width: 16px;
+            height: 16px;
+            padding: 18px;
+        }
+    }
+
+    hr {
+        border: .5px #ddd solid;
+        width: 100%;
+        margin: 0px;
+    }
+
+    // ----------------------------------------
+    // hero 
+    // ----------------------------------------
+
+    .hero {
+        margin-top: 40px;
+        color: $text-color;
+
+        .edit-masthead {
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+    // ----------------------------------------
+    // graphics 
+    // ----------------------------------------
+
+    #placeholder-image {
+        height: 400px;
+        background-color: lightgray;
+    }
+
+    // ----------------------------------------
+    // links 
+    // ----------------------------------------
+
+    a, a:visited {
+        text-decoration: none;
+        color: $text-color;
+    }
+
+    a:hover {
+        color: $active;
+    }
+
+    .inline-link {
+        font-weight: 700;
+    }
+
+    // ----------------------------------------
+    // lists 
+    // ----------------------------------------
+
+    ul {
+        list-style: none;
+        margin-top: -16px;
+        a {
+            @include body-text;
+        }
+    }
+
+    // ----------------------------------------
+    // footer 
+    // ----------------------------------------
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        padding: 16px;
+    }
+
+    .copyright {
+        @include primary-type;
+        font-size: .8em;
+        opacity: .5;
+    }
+
+    .disclaimer {
+        span {
+            font-family: sans-serif;
+            font-size: 12px;
+            color: gray;
+
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
+        }
+    }
+}
