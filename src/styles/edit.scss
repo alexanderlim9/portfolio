@@ -42,6 +42,10 @@
     color: $text-color;
 }
 
+@mixin sans-serif() {
+    font-family: sans-serif;
+}
+
 // ----------------------------------------
 // variables 
 // ----------------------------------------
@@ -77,7 +81,7 @@ $text-color: #333; // black
     }
     p {
         @include body-text;
-        margin: 1.5em 0;
+        margin: 0px 0px 20px 0px;
     }
 
     // ----------------------------------------
@@ -143,29 +147,63 @@ $text-color: #333; // black
     }
 
     // ----------------------------------------
+    // main copy 
+    // ----------------------------------------
+
+    p.foreward {
+        font-style: italic;
+    }
+
+    // ----------------------------------------
     // graphics 
     // ----------------------------------------
 
     #placeholder-image {
         height: 400px;
+        width: 700px;
         background-color: lightgray;
     }
 
+    .byline {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 30px;
+
+        #avatar {
+            width: 50px;
+            height: 50px;
+            margin-left: -8px;
+            background-image: url('../../static/avatar.png');
+            background-size: contain;
+            border-radius: 50%;
+        }
+
+        #byline {
+            @include sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    }  
+
+    .date {
+        @include sans-serif;
+        font-size: 14px;
+        color: $text-color;
+        margin: 7px 0px;
+    }
     // ----------------------------------------
     // links 
     // ----------------------------------------
 
-    a, a:visited {
-        text-decoration: none;
-        color: $text-color;
+    a {
+        color: #326891;
+        text-decoration: underline;
     }
 
     a:hover {
-        color: $active;
-    }
-
-    .inline-link {
-        font-weight: 700;
+        text-decoration: none;
     }
 
     // ----------------------------------------
@@ -200,7 +238,7 @@ $text-color: #333; // black
 
     .disclaimer {
         span {
-            font-family: sans-serif;
+            @include sans-serif;
             font-size: 12px;
             color: gray;
 

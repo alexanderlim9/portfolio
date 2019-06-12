@@ -19,14 +19,27 @@ const EditPage = () => (
         <span className="edit-masthead">The Edit</span>
         <h1>A Blind Eye to the Blind</h1>
         <h2>How I, and other developers, haven't cared enough about creating an accessible Internet.</h2>
-        <div id="placeholder-image"></div>
+      </div>
+      <div id="placeholder-image"></div>
+      <div className="block byline">
+        <div id="avatar"/>
+        <span id="byline">By Alex Lim</span>
+      </div>
+      <div className="block date">
+        <span className="date">June 12, 2019</span>
       </div>
       <div className="block copy">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p className="foreward">Welcome to The Edit newsletter. Each week you’ll hear from <a href="https://www.nytimes.com/2018/08/28/smarter-living/the-edit-contributors.html?module=inline" target="_blank">college students and recent graduates</a> about issues going on in their lives. You also may hear from me, <a>Christen Enos</a>, editor of the newsletter. <a>Sign up here</a> to get it in your inbox.</p>
+        <p>
+        I’ll be the one who makes the website you browse tomorrow. If not me, then perhaps another computer science student fresh out of school. While I like to pretend that I know my way around web development, I know there’s a big gap in my repertoire. It’s how I keep hearing about “web accessibility,” but also how I always seem to “forget” it as I’m scrambling to meet a deadline. Afterall, if it works, it works. Right?
+        </p>
+        <p>
+        It’s not that don’t care about making accessible websites, it’s just that I don’t have time. And that’s the biggest problem. Accessibility isn’t a priority to web developers and that needs to change. There’s always time to choose which features you implement, and making sure that your site is screen-reader compatible makes a world of difference to someone who’s blind.
+        </p>
       </div>
       <div className="block disclaimer">
         <span>
-          DISCLAIMER: Some of the content on this page has been taken from The New York Times website. The author does not claim ownership of the trademarked elements of The New York Times nor any assets of their website. This project is solely for academic and educational purposes. The author can be contacted via <a href="mailto:lim.a@husky.neu.edu">email</a> for any inquiries.
+          DISCLAIMER: Some of the content and styles on this page has been taken from The New York Times website. The author does not claim ownership of the trademarked elements of The New York Times nor any assets of their website. This project is solely for academic and educational purposes. The author can be contacted via <a href="mailto:lim.a@husky.neu.edu">email</a> for any inquiries.
         </span>
       </div>
     </div>
