@@ -6,8 +6,6 @@ import SEO from "../components/seo"
 
 const EditPage = () => (
   <Layout>
-   
-    {/* Some of the content on this page has been taken from The New York Times website. The author does not claim ownership of the trademarked elements of The New York Times nor their website. This project is solely for academic/educational purposes. The author can be contacted at lim.a@husky.neu.edu for any inquiries. */}
     <div className="edit-wrapper">
       <div className="nav">
         <svg id="hamburger" class="css-1fe7a5q" viewBox="0 0 16 16"><rect x="1" y="3" fill="#333333" width="14" height="2"></rect><rect x="1" y="7" fill="#333333" width="14" height="2"></rect><rect x="1" y="11" fill="#333333" width="14" height="2"></rect></svg>
@@ -20,7 +18,7 @@ const EditPage = () => (
         <h1>A Blind Eye to the Blind</h1>
         <h2>How I, and other developers, haven't cared enough about creating an accessible Internet.</h2>
       </div>
-      <div id="placeholder-image"></div>
+      <div className="block" id="placeholder-image"></div>
       <div className="block byline">
         <div id="avatar"/>
         <span id="byline">By Alex Lim</span>
@@ -31,15 +29,31 @@ const EditPage = () => (
       <div className="block copy">
         <p className="foreward">Welcome to The Edit newsletter. Each week you’ll hear from <a href="https://www.nytimes.com/2018/08/28/smarter-living/the-edit-contributors.html?module=inline" target="_blank">college students and recent graduates</a> about issues going on in their lives. You also may hear from me, <a>Christen Enos</a>, editor of the newsletter. <a>Sign up here</a> to get it in your inbox.</p>
         <p>
-        I’ll be the one who makes the website you browse tomorrow. If not me, then perhaps another computer science student fresh out of school. While I like to pretend that I know my way around web development, I know there’s a big gap in my repertoire. It’s how I keep hearing about “web accessibility,” but also how I always seem to “forget” it as I’m scrambling to meet a deadline. Afterall, if it works, it works. Right?
+        I’ll be the one who makes the website you browse tomorrow. If not me, then perhaps another computer science student fresh out of school. While I like to pretend that I know my way around web development, I know there’s a big gap in my repertoire. It’s how I keep hearing about “web accessibility,” and also how I always seem to “forget” it as I’m scrambling to meet a deadline. In the rush to deliver a finished product, I’ll do anything it takes to get something up and running on the page&mdash;even if it’s not perfect. After all, if it works, it works. Right?        </p>
+        <p>
+        Wrong.
         </p>
         <p>
-        It’s not that don’t care about making accessible websites, it’s just that I don’t have time. And that’s the biggest problem. Accessibility isn’t a priority to web developers and that needs to change. There’s always time to choose which features you implement, and making sure that your site is screen-reader compatible makes a world of difference to someone who’s blind.
+        Just because a site works for you doesn’t mean it works for the next person. For people with disabilities, navigating the web can be a completely different experience than what most people are familiar with. So then the onus is on me and other web developers to build websites for <em>everyone</em>, or at least it should be. 
         </p>
+        <p>
+        It’s not that I don’t <em>care</em> about making accessible websites, it’s just that I don’t have <em>time</em>. And that’s the biggest problem. Accessibility isn’t a priority to web developers and that needs to change. There’s always time to choose which features you implement, and making sure that your site is screen-reader compatible makes a world of difference to someone who’s blind. Sure, I might cut a few corners and save myself some work, but at whose expense? I’ll give you a hint: it’s not mine. 
+        </p>
+        <p>
+        Over the next 30 years, the number of people with visual impairments is <a href="https://www.nih.gov/news-events/news-releases/visual-impairment-blindness-cases-us-expected-double-2050" target="_blank">expected to double</a>. These are the people, among millions of other people around the world living with disabilities, that are shut out when developers like me skip out on writing a few extra tests. In addition to visual impairments such as blindness, low-vision, and color blindness (color vision deficiency), disabilities relating to hearing, mobility, and cognition can all present barriers to browsing the web that many able users don’t have to consider.
+        </p>
+        <p className="center-type in-progress-flag">
+          <em>--- in progress ---</em>
+        </p>
+        <div className="author-info">
+          <p>
+          Alex Lim is a contributor to The Edit. He studies computer science and design at Northeastern University where he is expected to graduate in May 2020. He currently works as an engineer at Upstatement.
+          </p>
+        </div>
       </div>
       <div className="block disclaimer">
         <span>
-          DISCLAIMER: Some of the content and styles on this page has been taken from The New York Times website. The author does not claim ownership of the trademarked elements of The New York Times nor any assets of their website. This project is solely for academic and educational purposes. The author can be contacted via <a href="mailto:lim.a@husky.neu.edu">email</a> for any inquiries.
+          DISCLAIMER: Some of the content and styles on this page have been taken from The New York Times website. The author does not claim ownership of the trademarked elements of The New York Times nor of any assets of its website. This project is solely for academic and educational purposes. The author can be contacted via <a href="mailto:lim.a@husky.neu.edu">email</a> for any inquiries.
         </span>
       </div>
     </div>
