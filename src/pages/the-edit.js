@@ -24,26 +24,54 @@ const EditPage = () => (
         <span id="byline">By Alex Lim</span>
       </div>
       <div className="block date">
-        <span className="date">June 12, 2019</span>
+        <span className="date">June 20, 2019</span>
       </div>
       <div className="block copy">
         <p className="foreward">Welcome to The Edit newsletter. Each week you’ll hear from <a href="https://www.nytimes.com/2018/08/28/smarter-living/the-edit-contributors.html?module=inline" target="_blank">college students and recent graduates</a> about issues going on in their lives. You also may hear from me, <a>Christen Enos</a>, editor of the newsletter. <a>Sign up here</a> to get it in your inbox.</p>
         <p>
-        I’ll be the one who makes the website you browse tomorrow. If not me, then perhaps another computer science student fresh out of school. While I like to pretend that I know my way around web development, I know there’s a big gap in my repertoire. It’s how I keep hearing about “web accessibility,” and also how I always seem to “forget” it as I’m scrambling to meet a deadline. In the rush to deliver a finished product, I’ll do anything it takes to get something up and running on the page&mdash;even if it’s not perfect. After all, if it works, it works. Right?        </p>
-        <p>
-        Wrong.
+        I could be the one who makes the website you browse tomorrow. To that, I have only one word to say: <em>Yikes</em>. I’m a computer science student focusing on web development and design, and I’m next in line to enter the workforce. What troubles me about this is realizing how my actions (or inactions) as a web developer can impact the communities that I’m trying to serve. In particular, I worry that this generation of incoming developers isn’t being taught to value accessibility in the products that they build. If that’s true, it means that people with disabilities are being left out of the picture when it comes to accessing content on the web. That needs to change.
         </p>
         <p>
-        Just because a site works for you doesn’t mean it works for the next person. For people with disabilities, navigating the web can be a completely different experience than what most people are familiar with. So then the onus is on me and other web developers to build websites for <em>everyone</em>, or at least it should be. 
+        I’ve worked in the web industry as a front-end developer for 18 months now across three internships. In each of these jobs, no one has really been concerned with whether the product I’m building is accessible. No one has asked me if the webpage I made is compatible with <a href="https://webaccess.berkeley.edu/ask-pecan/what-is-a-screen-reader" target="_blank">screen-readers</a> or similar assistive technology. No one has asked me if the font size on the page will still be legible to elderly and low-vision users. My supervisors mainly cared that my code worked how it was supposed to. Accessibility just never came up.
         </p>
         <p>
-        It’s not that I don’t <em>care</em> about making accessible websites, it’s just that I don’t have <em>time</em>. And that’s the biggest problem. Accessibility isn’t a priority to web developers and that needs to change. There’s always time to choose which features you implement, and making sure that your site is screen-reader compatible makes a world of difference to someone who’s blind. Sure, I might cut a few corners and save myself some work, but at whose expense? I’ll give you a hint: it’s not mine. 
+        The one time it did, however, I was at my second internship working on a tool to visualize data using graphs and various colors. One of my team members Mike happened to be red-green color blind, a condition also known as <a href="https://nei.nih.gov/health/color_blindness/facts_about" target="_blank">deuteranopia</a>. His perception of color was different from the rest of my team’s and thus affected his ability to use this product. But even with this accessibility flaw in mind, my team simply brushed it off&mdash;it wasn’t that important. “Make graphs color blind accessible” was a task on our product backlog, but it never made its way up to the top of the list, at least not while I was there.
         </p>
         <p>
-        Over the next 30 years, the number of people with visual impairments is <a href="https://www.nih.gov/news-events/news-releases/visual-impairment-blindness-cases-us-expected-double-2050" target="_blank">expected to double</a>. These are the people, among millions of other people around the world living with disabilities, that are shut out when developers like me skip out on writing a few extra tests. In addition to visual impairments such as blindness, low-vision, and color blindness (color vision deficiency), disabilities relating to hearing, mobility, and cognition can all present barriers to browsing the web that many able users don’t have to consider.
+        So what I’ve seen so far is this prioritization of features that favors a “just get it working” approach to web development. In the industry, there’s often a rush to meet deadlines and deliver the next feature or update on time. Sometimes that means cutting corners to get things done, but ensuring accessibility shouldn’t be the first task to be cut. Sure, I might save myself some work and meet that important deadline, but at whose expense? I’ll give you a hint: it’s not mine.
         </p>
-        <p className="center-type in-progress-flag">
-          <em>--- in progress ---</em>
+        <p>
+        My coworker Mike is just one of more than 11.4 million Americans living with some form of visual impairment or vision problem according to a <a href="https://www.nih.gov/news-events/news-releases/visual-impairment-blindness-cases-us-expected-double-2050" target="_blank">study by the National Institutes of Health</a>. By the year 2050, the number of visually impaired and blind people in the US is expected to double; these are just <em>some</em> of the people who are affected when developers build websites without accessibility in mind. Other affected groups include people with hearing, mobility, or cognitive disabilities that influence the way they surf the web.
+        </p>
+        <p>
+        If developers in the field today don’t value accessibility, it’s on this new generation of students to step up to bat. It’s no small task to build a website that everyone can use, but I’ve learned a few small ways that developers can promote accessibility in their work and out on the web.
+        </p>
+        <h3>
+        Follow the Guidelines
+        </h3>
+        <p>
+        The <a href="https://www.w3.org/TR/WCAG21/" target="_blank">Web Content Accessibility Guidelines (WCAG 2.1)</a> is an effort by the World Wide Web Consortium (W3C) to establish a universal standard for evaluating web accessibility. This document serves as a fairly exhaustive reference for accessibility issues ranging from keyboard navigation to seizures and physical reactions. WCAG 2.1 even outlines requirements for the three levels of accessibility compliance: A (lowest), AA, and AAA (highest). 
+        </p>
+        <h3>
+        Use Accessibility Checkers
+        </h3>
+        <p>
+        There are a number of tools available to developers to evaluate a website’s accessibility. Tools such as <a href="http://pa11y.org/" target="_blank">Pa11y</a> can be integrated into projects to allow developers to monitor accessibility throughout the development process and identify potential errors. But these services aren’t just limited to technical users. <a href="https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd" target="_blank">Axe</a> is another popular tool for evaluating the accessibility of any website, and it’s available as a Chrome extension. Many of the services available are free and easy to use. 
+        </p>
+        <h3>
+        Raise Awareness
+        </h3>
+        <p>
+        One of the biggest obstacles to the widespread adoption of accessibility standards is lack of awareness. Some developers may fail to ensure accessibility simply because they’re unaware of the needs of users with disabilities. Others may have this awareness but are unaware of how to address this or decide not to all together. No matter the reason, educating oneself and others about the importance of web accessibility can have a wide-reaching impact among those in the web community. 
+        </p>
+        <p>
+        Now of course there are challenges to this, again, it’s no easy task. Resistance can come from all around: managers, senior developers, designers, clients, etc., and it can be especially difficult for newer developers to go against the grain. There are some challenges that will be inevitable. For instance, some older and more complex codebases could be incompatible or too complicated to update to meet accessibility standards.  Sometimes accessible solutions can impose design constraints or limit certain features of a website. While increasing resources like time and money might help developers enforce accessibility, it’s the attitude towards web accessibility that holds the most potential.
+        </p>
+        <p>
+        As the next generation of web developers begins to enter the industry, I hope they bring with them a new set of values. It’s about time! Accessibility should become a universal quality of the Internet, and developers&mdash;new ones especially&mdash;play a huge role in making this a reality. As creators of the web, they’re often the decision makers who guide how the online world takes shape. Each voice that’s able to advocate for the needs of people with disabilities stands to help shift the web community towards more inclusive practices.
+        </p>
+        <p>
+        This isn’t a lesson that I picked up school, in fact, it took quite some time for me to realize this. Along the way, inclusive web development just wasn’t on my radar, and no one I’ve worked with seemed to have made much effort to change that. My hope is that I can be one of those people to speak up; otherwise, the problem persists and the web continues to be built inaccessible. The internet was made for everyone, regardless of disability status. We need to make sure it stays that way. 
         </p>
         <div className="author-info">
           <p>

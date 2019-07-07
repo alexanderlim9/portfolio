@@ -16,6 +16,10 @@
     font-style: normal;
 }
 
+@mixin sans-serif() {
+    font-family: sans-serif;
+}
+
 @mixin primary-type() {
     font-family: 'Georgia', serif;
     font-style: normal;
@@ -34,6 +38,11 @@
     line-height: 1.3em;
 }
 
+@mixin h3-text() {
+    @include sans-serif;
+    font-weight: bold;
+}
+
 @mixin body-text() {
     @include primary-type;
     font-size: 20px;
@@ -42,9 +51,7 @@
     color: $text-color;
 }
 
-@mixin sans-serif() {
-    font-family: sans-serif;
-}
+
 
 // ----------------------------------------
 // variables 
@@ -79,7 +86,12 @@ $text-color: #333; // black
     h2 {
         @include h2-text();
     }
-    
+
+    h3 {
+        @include h3-text;
+        margin: 35px 0px 15px 0px;
+    }
+
     p {
         @include body-text;
         margin: 0px 0px 20px 0px;
@@ -95,6 +107,7 @@ $text-color: #333; // black
             @include sans-serif;
             font-size: 16px;
             line-height: 22px;
+            margin-top: 50px;
         }
     }
 
@@ -117,6 +130,7 @@ $text-color: #333; // black
     .in-progress-flag {
         margin: 50px 0px;
     }
+    
     // ----------------------------------------
     // nav 
     // ----------------------------------------
@@ -294,6 +308,7 @@ $text-color: #333; // black
 
     .disclaimer {
         margin-top: 100px;
+        margin-bottom: -90px;
 
         span {
             @include sans-serif;

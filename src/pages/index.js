@@ -8,6 +8,14 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <div className="container">
+      <div className="block two-col">
+        <div className="two-col-left">
+        </div>
+        <div className="two-col-right">
+        </div>
+      </div>
+
+    <div style={{display: 'none'}}>
       <div className="block hero">
           <h1>Alex Lim is a creative developer, designer, and journalist telling stories through data and the web.</h1>
       </div>
@@ -23,13 +31,13 @@ const IndexPage = () => (
       </div>
       <div className="block contact-list">
         <ul>
-          <li><a className="inline-link" href="https://drive.google.com/file/d/1zF072kQNKQPQhD6xce9yK67ForGWj9Rv/view?usp=sharing" target="_blank">Resume</a></li>
+          <li><a className="inline-link" href="https://drive.google.com/file/d/1YtwDXLUnrQG9_IrEPc1wMMT7zX7-iimA/view?usp=sharing" target="_blank">Resume</a></li>
           <li><a className="inline-link" href="https://github.com/alexanderlim9" target="_blank">Github</a></li>
           <li><a className="inline-link" href="https://www.linkedin.com/in/alexander-lim/" target="_blank">LinkedIn</a></li>
           <li><a className="inline-link" href="https://twitter.com/journalims" target="_blank">Twitter</a></li>
         </ul>
       </div>
-      
+      </div>
     </div>
   </Layout>
 )
