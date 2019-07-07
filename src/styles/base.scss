@@ -10,12 +10,12 @@
 }
 
 @mixin primary-type() {
-    font-family: warnock-pro, serif;
+    font-family: ff-tisa-web-pro, serif;
     font-style: normal;
 }
 
 @mixin h1-text() {
-    font-family: warnock-pro-display, serif;
+    font-family: ff-tisa-web-pro, serif;
     font-style: normal;
     font-size: 2.5em;
     font-weight: 700;
@@ -25,6 +25,13 @@
 @mixin body-text() {
     @include primary-type;
     font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.33em;
+}
+
+@mixin sans-serif() {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1em;
     font-weight: 400;
     line-height: 1.33em;
 }
