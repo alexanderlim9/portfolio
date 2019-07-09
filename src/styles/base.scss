@@ -38,6 +38,7 @@
     font-size: 1em;
     font-weight: 400;
     line-height: 1.33em;
+    color: $text-color;
 }
 
 @mixin sans-serif() {
@@ -181,9 +182,16 @@ a:hover {
 
 ul {
     list-style: none;
-    margin-top: -16px;
+    padding: 0px;
+    margin: 1.5em 0;
+
     a {
         @include body-text;
+        text-decoration: none;
+    }
+
+    a:before {
+        content: '- ';
     }
 }
 

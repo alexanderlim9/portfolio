@@ -27,9 +27,23 @@ const IndexPage = () => (
               </div>
               <div className="home-cta-col">
                 <h2>Formerly</h2>
+                <ul>
+                  <li><a href="https://www.upstatement.com/" target="_blank">Upstatement</a></li>
+                  <li><a href="https://www.bostonglobe.com/" target="_blank">The Boston Globe</a></li>
+                  <li><a href="https://www.twosixlabs.com/" target="_blank">Two Six Labs</a></li>
+                  <li><a href="https://web.northeastern.edu/scout/" target="_blank">Scout Studio</a></li>
+                </ul>
+                <a href="/coming-soon">View experience</a>
               </div>
               <div className="home-cta-col">
                 <h2>Featured</h2>
+                <ul>
+                  <li><a href="https://sinceparkland.org/" target="_blank">Since Parkland</a></li>
+                  <li><a href="https://apps.bostonglobe.com/magazine/graphics/2019/01/17/valedictorians/" target="_blank">The Valedictorians Project</a></li>
+                  <li><a href="/coming-soon" target="_blank">Arnold Ventures</a></li>
+                  <li><a href="/coming-soon" target="_blank">Concerts</a></li>
+                </ul>
+                <a href="/coming-soon">Explore projects</a>
               </div>
             </div>
           </div>
