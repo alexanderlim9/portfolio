@@ -8,10 +8,18 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <div className="container">
-      <div className="block two-col">
+      <div className="two-col">
         <div className="two-col-left">
+          <div className="half-page-block_image">
+            <div className="image-block"></div>
+          </div>
         </div>
         <div className="two-col-right">
+          <div className="half-page-block_text">
+            <div className="text-block">
+              <h1 className="hero"><b>I'm Alex.</b> I'm a creative developer, designer, and journalist telling stories through data and the web.</h1>      
+            </div>
+          </div>
         </div>
       </div>
 

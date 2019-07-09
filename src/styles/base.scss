@@ -12,14 +12,16 @@
 @mixin primary-type() {
     font-family: ff-tisa-web-pro, serif;
     font-style: normal;
+    color: $text-color;
 }
 
 @mixin h1-text() {
     font-family: ff-tisa-web-pro, serif;
     font-style: normal;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
     line-height: 1em;
+    color: $text-color;
 }
 
 @mixin body-text() {
@@ -34,6 +36,7 @@
     font-size: 1em;
     font-weight: 400;
     line-height: 1.33em;
+    color: $text-color;
 }
 
 // ----------------------------------------
@@ -49,8 +52,15 @@ $lg: 1500px;
 $xl: 1800px;
 
 $bkg: #FFFFFF; // white
+// $bkg: rgb(34, 0, 0); // dark-mode-bkg
+
 $active: #FF7500; // Pantone 2018 C
 $text-color: #000; // black
+// $text-color: rgb(177, 166, 162); // dark-mode-text
+
+
+$container-padding: 8px;
+$block-width: 600px;
 
 // ----------------------------------------
 // typography 
@@ -65,6 +75,12 @@ p {
     margin: 1.5em 0;
 }
 
+h1.hero {
+    font-weight: 400;
+    font-size: 2.4em;
+    line-height: 1.2em;
+}
+
 // ----------------------------------------
 // layout 
 // ----------------------------------------
@@ -74,72 +90,48 @@ body {
 }
 
 .container {
+    background-color: $bkg;
+    padding: $container-padding;
+}
+
+.half-page-block_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 16px);
+}
+
+.half-page-block_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25vh;
+}
+
+.text-block {
+    width: $block-width;
+}
+
+.two-col {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: $bkg;
-    
-    @include media($sm) {
-        align-items: flex-start;
-        margin-left: 5%;
-    }
-
-    @include media($lg) {
-        margin-left: 10%;
-    }
-}
-
-.block {
-    padding: 8px;
-
-    @include media($tablet) {
-        width: 600px;
-    }
 
     @include media($sm) {
-        width: 800px;
+        flex-direction: row;
+    }
+
+    .two-col-left, .two-col-right {
+        width: 50%;
     }
 }
 
-.hero {
-    margin-top: 60px;
-    
-    @include media($tablet) {
-        margin-top: 70px;
-    }
-
-    @include media($sm) {
-        margin-top: 120px;
-        width: 80%;
-
-        h1 {
-            font-size: 3.2em;
-        }
-        // h1 {
-        //     font-size: 2.5em;
-        // }
-    }
+.image-block {
+    width: 500px;
+    height: 500px;
+    background-image: url('../../static/portrait.jpg');
+    background-size: contain;
 }
 
-.contact-list {
-    ul {
-        padding: 0px;
-    }
-
-    li {
-        display: inline;
-        // margin: 0px 5px;
-    }
-    li:after {
-        @include body-text();
-        content: ' / ';
-    }
-
-    li:last-child:after {
-        content: '';
-    }
-}
 // ----------------------------------------
 // links 
 // ----------------------------------------
