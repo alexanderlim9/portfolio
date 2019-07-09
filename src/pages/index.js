@@ -19,6 +19,19 @@ const IndexPage = () => (
             <div className="text-block">
               <h1 className="hero"><b>I'm Alex.</b> I'm a creative developer, designer, and journalist telling stories through data and the web.</h1>      
             </div>
+            <div className="text-block home-cta">
+              <div className="home-cta-col">
+                <h2>Currently</h2>
+                <p>Looking for a job! <br/>Will you hire me?</p>
+                <a href="mailto:lim.a@husky.neu.edu">Get in touch</a>
+              </div>
+              <div className="home-cta-col">
+                <h2>Formerly</h2>
+              </div>
+              <div className="home-cta-col">
+                <h2>Featured</h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>

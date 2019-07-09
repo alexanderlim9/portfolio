@@ -24,9 +24,18 @@
     color: $text-color;
 }
 
+@mixin h2-text() {
+    font-family: ff-tisa-web-pro, serif;
+    font-style: normal;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1em;
+    color: $text-color;
+}
+
 @mixin body-text() {
     @include primary-type;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 400;
     line-height: 1.33em;
 }
@@ -52,11 +61,11 @@ $lg: 1500px;
 $xl: 1800px;
 
 $bkg: #FFFFFF; // white
-// $bkg: rgb(34, 0, 0); // dark-mode-bkg
+$bkg: rgb(34, 0, 0); // dark-mode-bkg
 
 $active: #FF7500; // Pantone 2018 C
 $text-color: #000; // black
-// $text-color: rgb(177, 166, 162); // dark-mode-text
+$text-color: rgb(177, 166, 162); // dark-mode-text
 
 
 $container-padding: 8px;
@@ -81,6 +90,10 @@ h1.hero {
     line-height: 1.2em;
 }
 
+h2 {
+    @include h2-text;
+}
+
 // ----------------------------------------
 // layout 
 // ----------------------------------------
@@ -103,6 +116,7 @@ body {
 
 .half-page-block_text {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 25vh;
@@ -132,12 +146,24 @@ body {
     background-size: contain;
 }
 
+.home-cta {
+    display: flex;
+    flex-direction: row;
+}
+
+.home-cta-col {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 200px;
+}
+
 // ----------------------------------------
 // links 
 // ----------------------------------------
 
 a, a:visited {
-    text-decoration: none;
+    @include sans-serif;
     color: $text-color;
 }
 
