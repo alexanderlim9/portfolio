@@ -118,7 +118,7 @@ body {
 .half-page-block_text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding-top: 25vh;
 }
