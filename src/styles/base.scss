@@ -87,8 +87,12 @@ p {
 
 h1.hero {
     font-weight: 400;
-    font-size: 2.4em;
+    font-size: 2em;
     line-height: 1.2em;
+
+    @include media($sm) {
+        font-size: 2.4em;
+    }
 }
 
 h2 {
@@ -112,7 +116,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 16px);
+
+    @include media($sm) {
+        height: calc(100vh - 16px);
+    }
 }
 
 .half-page-block_text {
@@ -120,11 +127,18 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 25vh;
+
+    @include media($sm) {
+        padding-top: 25vh;
+    }
 }
 
 .text-block {
-    width: $block-width;
+    width: calc(100vw - ($container-padding * 2));
+
+    @include media($sm) {
+        width: $block-width;
+    }
 }
 
 .two-col {
@@ -134,17 +148,24 @@ body {
     @include media($sm) {
         flex-direction: row;
     }
+}
 
-    .two-col-left, .two-col-right {
+.two-col-left, .two-col-right {
+    @include media($sm) {
         width: 50%;
     }
 }
 
 .image-block {
-    width: 500px;
-    height: 500px;
+    width: calc(100vw - 16px);
+    height: calc(100vw - 16px);
     background-image: url('../../static/portrait.jpg');
     background-size: contain;
+
+    @include media($sm) {
+        width: 500px;
+        height: 500px;
+    }
 }
 
 .home-cta {
