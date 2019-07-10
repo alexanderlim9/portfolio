@@ -33,7 +33,7 @@ const IndexPage = () => (
                   <li><a href="https://www.twosixlabs.com/" target="_blank">Two Six Labs</a></li>
                   <li><a href="https://web.northeastern.edu/scout/" target="_blank">Scout Studio</a></li>
                 </ul>
-                <a href="/coming-soon">View experience</a>
+                <a href="https://drive.google.com/file/d/1YtwDXLUnrQG9_IrEPc1wMMT7zX7-iimA/view?usp=sharing" target="_blank">View experience</a>
               </div>
               <div className="home-cta-col">
                 <h2>Featured</h2>
@@ -48,7 +48,6 @@ const IndexPage = () => (
             </div>
             <div className="text-block contact">
               <ul>
-                <li><a href="https://drive.google.com/file/d/1zF072kQNKQPQhD6xce9yK67ForGWj9Rv/view?usp=sharing" target="_blank">Resume</a></li>
                 <li><a href="https://github.com/alexanderlim9" target="_blank">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/alexander-lim/" target="_blank">LinkedIn</a></li>
                 <li><a href="https://twitter.com/journalims" target="_blank">Twitter</a></li>
