@@ -137,7 +137,7 @@ body {
     width: calc(100vw - 16px);
 
     @include media($sm) {
-        width: $block-width;
+        max-width: $block-width;
     }
 }
 
@@ -200,6 +200,11 @@ body {
 
 .home-cta-col-header {
     min-width: calc((100vw - 16px) / 3);
+
+    @include media($sm) {
+        min-width: initial;
+        width: 100%;
+    }
 }
 
 .home-cta-col-content {
@@ -207,6 +212,11 @@ body {
 
     p, ul {
         margin-top: 0px;
+    }
+
+    @include media($sm) {
+        min-width: initial;
+        width: 100%;
     }
 }
 
