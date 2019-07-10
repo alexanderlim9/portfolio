@@ -170,15 +170,40 @@ body {
 
 .home-cta {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 30px;
+
+    @include media($sm) {
+        flex-direction: row;
+    }
 }
 
 .home-cta-col {
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    max-width: 200px;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-top: solid 1px lightgray;
+    padding-top: 5px;
+
+    h2 {
+        margin-top: 0px;
+    }
+
+    @include media($sm) {
+        flex-direction: column;
+        max-width: 200px;
+        flex-grow: 1;
+        border-top: none;
+    }
+}
+
+.home-cta-col-header {
+    min-width: calc((100vw - 16px) / 3);
+}
+
+.home-cta-col-content {
+    min-width: calc(((100vw - 16px) / 3) * 2);
 
     p, ul {
         margin-top: 0px;

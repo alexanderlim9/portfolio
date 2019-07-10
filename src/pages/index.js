@@ -21,29 +21,35 @@ const IndexPage = () => (
             </div>
             <div className="text-block home-cta">
               <div className="home-cta-col">
-                <h2>Currently</h2>
-                <p>Looking for a job! <br/>Will you hire me?</p>
-                <a href="mailto:lim.a@husky.neu.edu">Get in touch</a>
+                <h2 className="home-cta-col-header">Currently</h2>
+                <div className="home-cta-col-content">
+                  <p>Looking for a job! <br/>Will you hire me?</p>
+                  <a href="mailto:lim.a@husky.neu.edu">Get in touch</a>
+                </div>
               </div>
               <div className="home-cta-col">
-                <h2>Formerly</h2>
-                <ul>
-                  <li><a href="https://www.upstatement.com/" target="_blank">Upstatement</a></li>
-                  <li><a href="https://www.bostonglobe.com/" target="_blank">The Boston Globe</a></li>
-                  <li><a href="https://www.twosixlabs.com/" target="_blank">Two Six Labs</a></li>
-                  <li><a href="https://web.northeastern.edu/scout/" target="_blank">Scout Studio</a></li>
-                </ul>
-                <a href="https://drive.google.com/file/d/1YtwDXLUnrQG9_IrEPc1wMMT7zX7-iimA/view?usp=sharing" target="_blank">View experience</a>
+                <h2 className="home-cta-col-header">Formerly</h2>
+                <div className="home-cta-col-content">
+                  <ul>
+                    <li><a href="https://www.upstatement.com/" target="_blank">Upstatement</a></li>
+                    <li><a href="https://www.bostonglobe.com/" target="_blank">The Boston Globe</a></li>
+                    <li><a href="https://www.twosixlabs.com/" target="_blank">Two Six Labs</a></li>
+                    <li><a href="https://web.northeastern.edu/scout/" target="_blank">Scout Studio</a></li>
+                  </ul>
+                  <a href="https://drive.google.com/file/d/1YtwDXLUnrQG9_IrEPc1wMMT7zX7-iimA/view?usp=sharing" target="_blank">View experience</a>
+                </div>
               </div>
               <div className="home-cta-col">
-                <h2>Featured</h2>
-                <ul>
-                  <li><a href="https://sinceparkland.org/" target="_blank">Since Parkland</a></li>
-                  <li><a href="https://apps.bostonglobe.com/magazine/graphics/2019/01/17/valedictorians/" target="_blank">The Valedictorians Project</a></li>
-                  <li><a href="/coming-soon" target="_blank">Arnold Ventures</a></li>
-                  <li><a href="/coming-soon" target="_blank">Concerts</a></li>
-                </ul>
-                <a href="/coming-soon">Explore projects</a>
+                <h2 className="home-cta-col-header">Featured</h2>
+                <div className="home-cta-col-content">
+                  <ul>
+                    <li><a href="https://sinceparkland.org/" target="_blank">Since Parkland</a></li>
+                    <li><a href="https://apps.bostonglobe.com/magazine/graphics/2019/01/17/valedictorians/" target="_blank">The Valedictorians Project</a></li>
+                    <li><a href="/coming-soon" target="_blank">Arnold Ventures</a></li>
+                    <li><a href="/coming-soon" target="_blank">Concerts</a></li>
+                  </ul>
+                  <a href="/coming-soon">Explore projects</a>
+                </div>
               </div>
             </div>
             <div className="text-block contact">
