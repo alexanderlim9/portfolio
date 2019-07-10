@@ -36,7 +36,7 @@ const IndexPage = () => (
                     <li><a href="https://www.twosixlabs.com/" target="_blank">Two Six Labs</a></li>
                     <li><a href="https://web.northeastern.edu/scout/" target="_blank">Scout Studio</a></li>
                   </ul>
-                  <a href="https://drive.google.com/file/d/1YtwDXLUnrQG9_IrEPc1wMMT7zX7-iimA/view?usp=sharing" target="_blank">View experience</a>
+                  <a href="https://drive.google.com/file/d/1-rQK9KrxAyGKH5OWcPHR-_4DR5Rhv-0o/view?usp=sharing" target="_blank">View experience</a>
                 </div>
               </div>
               <div className="home-cta-col">
