@@ -134,7 +134,7 @@ body {
 }
 
 .text-block {
-    width: calc(100vw - ($container-padding * 2));
+    width: calc(100vw - 16px);
 
     @include media($sm) {
         width: $block-width;
