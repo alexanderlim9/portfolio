@@ -62,11 +62,11 @@ $lg: 1500px;
 $xl: 1800px;
 
 $bkg: #FFFFFF; // white
-$bkg: rgb(34, 0, 0); // dark-mode-bkg
+// $bkg: rgb(34, 0, 0); // dark-mode-bkg
 
 $active: #FF7500; // Pantone 2018 C
 $text-color: #000; // black
-$text-color: rgb(177, 166, 162); // dark-mode-text
+// $text-color: rgb(177, 166, 162); // dark-mode-text
 
 
 $container-padding: 8px;
@@ -194,6 +194,35 @@ ul {
         content: '- ';
     }
 }
+
+.contact {  
+    margin-top: 50px;
+
+    li {
+        display: inline;
+    }
+
+    a {
+        @include sans-serif;
+    }
+
+    a:hover {
+        color: $active;
+    }
+
+    a:before {
+        content: none;
+    }
+
+    li:after {
+        content: ' / '
+    }
+
+    li:last-child:after {
+        content: '';
+    }
+}
+
 
 // ----------------------------------------
 // footer 

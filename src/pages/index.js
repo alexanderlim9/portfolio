@@ -46,6 +46,14 @@ const IndexPage = () => (
                 <a href="/coming-soon">Explore projects</a>
               </div>
             </div>
+            <div className="text-block contact">
+              <ul>
+                <li><a href="https://drive.google.com/file/d/1zF072kQNKQPQhD6xce9yK67ForGWj9Rv/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/alexanderlim9" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/alexander-lim/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/journalims" target="_blank">Twitter</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
