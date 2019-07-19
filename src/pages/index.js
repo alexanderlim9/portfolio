@@ -37,11 +37,6 @@ const IndexPage = () => (
           <b>I'm looking for a job!</b> Will you hire me? &mdash;>{" "}
           <a href="mailto:lim.a@husky.neu.edu">Get in touch</a>
         </p>
-
-        {/* <li><a href="https://sinceparkland.org/" target="_blank">Since Parkland</a></li>
-              <li><a href="https://apps.bostonglobe.com/magazine/graphics/2019/01/17/valedictorians/" target="_blank">The Valedictorians Project</a></li>
-              <li><a href="/coming-soon" target="_blank">Arnold Ventures</a></li>
-              <li><a href="/coming-soon" target="_blank">Concerts</a></li> */}
       </div>
       <div className="text-block-wide contact">
         <ul>
@@ -72,6 +67,34 @@ const IndexPage = () => (
             </a>
           </li>
         </ul>
+      </div>
+
+      {/* <li><a href="https://sinceparkland.org/" target="_blank">Since Parkland</a></li>
+              <li><a href="https://apps.bostonglobe.com/magazine/graphics/2019/01/17/valedictorians/" target="_blank">The Valedictorians Project</a></li>
+              <li><a href="/coming-soon" target="_blank">Arnold Ventures</a></li>
+              <li><a href="/coming-soon" target="_blank">Concerts</a></li> */}
+
+      <div className="text-block-wide">
+        <h2 className="section-header">Projects</h2>
+        <div className="project">
+          <h3>
+            <a href="https://sinceparkland.org/" target="_blank">
+              Since Parkland
+            </a>{" "}
+            &mdash; Upstatement
+          </h3>
+          <p>
+            Upstatement worked with{" "}<a href="https://www.thetrace.org/" target="_blank">
+              The Trace
+            </a>{" "}
+            to address the issue of gun violence through an interactive,
+            storytelling experience. Since Parkland tells the stories, as written by teen journalists, of the
+            children who've lost their lives to gun violence since the Parkland shooting
+            in 2018. I joined the project at the start of development and
+            focused on integrating AirTable data with our Jekyll site and built
+            the search functionality using the Algolia API.
+          </p>
+        </div>
       </div>
     </div>
   </Layout>
