@@ -35,7 +35,6 @@
 
 @mixin body-text() {
     @include primary-type;
-    font-size: 18px;
     font-weight: 400;
     line-height: 1.25em;
     color: $text-color;
@@ -43,7 +42,6 @@
 
 @mixin sans-serif() {
     font-family: 'Archivo', sans-serif;
-    font-size: 1em;
     font-weight: 400;
     line-height: 1.33em;
     color: $text-color;
@@ -65,7 +63,7 @@ $bkg: #FFFFFF; // white
 // $bkg: rgb(34, 0, 0); // dark-mode-bkg
 
 $active: #FF7500; // Pantone 2018 C
-$text-color: #000; // black
+$text-color: #222; // black
 // $text-color: rgb(177, 166, 162); // dark-mode-text
 
 
@@ -77,6 +75,9 @@ $block-width-wide: 800px;
 // ----------------------------------------
 // typography 
 // ----------------------------------------
+.container {
+    font-size: 18px;
+}
 
 h1 {
     @include h1-text;
