@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Alexander Lim" />
     <div className="container">
       <div className="text-block-wide">
         <h1 className="hero">
