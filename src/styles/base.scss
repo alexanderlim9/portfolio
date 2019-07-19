@@ -71,6 +71,8 @@ $text-color: #000; // black
 
 $container-padding: 8px;
 $block-width: 600px;
+$block-width-wide: 800px;
+
 
 // ----------------------------------------
 // typography 
@@ -99,6 +101,17 @@ h1.hero {
     }
 }
 
+p.hero {
+    font-size: 24px;
+    line-height: 32px;
+    a {
+        @include body-text;
+    }
+    a:hover {
+        color: $active;
+    }
+}
+
 h2 {
     @include h2-text;
 }
@@ -114,6 +127,10 @@ body {
 .container {
     background-color: $bkg;
     padding: $container-padding;
+
+    @include media($sm) {
+        padding: 10%;
+    }
 }
 
 .half-page-block_image {
@@ -143,6 +160,15 @@ body {
     @include media($sm) {
         width: calc((100vw - 16px) / 2);
         max-width: $block-width;
+    }
+}
+
+.text-block-wide {
+    width: calc(100vw - 16px);
+
+    @include media($sm) {
+        // width: calc((100vw - 16px) / 2);
+        max-width: $block-width-wide;
     }
 }
 
