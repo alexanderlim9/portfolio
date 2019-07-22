@@ -88,11 +88,18 @@ const IndexPage = () => (
               The Trace
             </a>{" "}
             to address the issue of gun violence through an interactive,
-            storytelling experience. Since Parkland tells the stories, as written by teen journalists, of the
-            children who've lost their lives to gun violence since the Parkland shooting
-            in 2018. I joined the project at the start of development and
+            storytelling experience. I joined the project at the start of development and
             focused on integrating AirTable data with our Jekyll site and built
             the search functionality using the Algolia API.
+          </p>
+        </div>
+        <div className="project">
+          <h3>
+            <a href="https://www.arnoldventures.org/grants" target="_blank">Arnold Ventures</a>{" "}
+            &mdash; Upstatement
+          </h3>
+          <p>
+            Arnold Ventures sought to improve the way they communicate their grant data. I worked in all steps of the design process from research and data analysis to design and finally development to visualize this data. The visualization was built in D3.js and integrated into a Craft CMS backend.
           </p>
         </div>
       </div>
