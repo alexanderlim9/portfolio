@@ -68,12 +68,6 @@ const IndexPage = () => (
           </li>
         </ul>
       </div>
-
-      {/* <li><a href="https://sinceparkland.org/" target="_blank">Since Parkland</a></li>
-              <li><a href="https://apps.bostonglobe.com/magazine/graphics/2019/01/17/valedictorians/" target="_blank">The Valedictorians Project</a></li>
-              <li><a href="/coming-soon" target="_blank">Arnold Ventures</a></li>
-              <li><a href="/coming-soon" target="_blank">Concerts</a></li> */}
-
       <div className="text-block-wide">
         <h2 className="section-header">Projects</h2>
         <div className="project">
@@ -100,6 +94,23 @@ const IndexPage = () => (
           </h3>
           <p>
             Arnold Ventures sought to improve the way they communicate their grant data. I worked in all steps of the design process from research and data analysis to design and finally development to visualize this data. The visualization was built in D3.js and integrated into a Craft CMS backend.
+          </p>
+        </div>
+        <div className="project">
+          <h3>
+            <a href="https://apps.bostonglobe.com/magazine/graphics/2019/01/17/valedictorians/" target="_blank">The Valedictorians Project</a>{" "}
+            &mdash; The Boston Globe
+          </h3>
+          <p>
+            The Globe took a look at what happens to Boston’s top students years after graduation. I started working on the project by tracking down and contacting valedictorians. Over the course of three months, I spoke with 30 valedictorians and collected data for the project’s research.
+          </p>
+        </div>
+        <div className="project">
+          <h3>
+            <a href="https://alexanderlim9.github.io/concerts/" target="_blank">Concerts</a>
+          </h3>
+          <p>
+            I went to my first concert in 2014 (it was Arcade Fire). I’m a big live music fan and frequent concerts often, so I decided to document them more formally before I start to forget. I had been keeping a list in a note doc but took the opportunity to apply the same tech stack I learned from Since Parkland. This version is built in Jekyll with data from AirTable and is a work in progress.
           </p>
         </div>
       </div>
