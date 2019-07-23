@@ -31,11 +31,10 @@ const IndexPage = () => (
           <a href="https://web.northeastern.edu/scout/" target="_blank">
             Scout Studio
           </a>
-          .
+          . I'm a senior at Northeastern University graduating in May 2020.
         </p>
         <p className="hero">
-          <b>I'm looking for a job!</b> Will you hire me? &mdash;>{" "}
-          <a href="mailto:lim.a@husky.neu.edu">Get in touch</a>
+          <b>I'm looking for a job!</b> Will you hire me?
         </p>
       </div>
       <div className="text-block-wide contact">
@@ -64,6 +63,11 @@ const IndexPage = () => (
           <li>
             <a href="https://twitter.com/journalims" target="_blank">
               Twitter
+            </a>
+          </li>
+          <li>
+            <a href="mailto:lim.a@husky.neu.edu">
+              Email
             </a>
           </li>
         </ul>
@@ -114,6 +118,10 @@ const IndexPage = () => (
           </p>
         </div>
       </div>
+      <div className="text-block-wide">
+        <h2 className="section-header">About Me</h2>
+      </div>
+
     </div>
   </Layout>
 )
