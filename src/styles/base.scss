@@ -199,7 +199,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    @include media($sm) {
+    @include media($tablet) {
         flex-direction: row;
     }
 }
@@ -210,15 +210,21 @@ body {
     }
 }
 
-.image-block {
-    width: calc(100vw - 16px);
-    height: calc(100vw - 16px);
+.photo {
+    width: 300px;
+    height: 300px;
     background-image: url('../../static/portrait.jpg');
     background-size: contain;
+}
 
-    @include media($sm) {
-        width: 500px;
-        height: 500px;
+.bio {
+    @include media($tablet) {
+        margin-left: 50px;
+        max-width: 450px;
+
+        p:first-child {
+            margin-top: 0px;
+        }
     }
 }
 
