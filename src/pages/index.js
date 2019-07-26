@@ -135,6 +135,37 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+      <div className="text-block-wide">
+        <h2 className="section-header">Contact</h2>
+        <p><b>Let's get in touch!</b><br/>I'll be attending the <a href="https://www.aaja19.org/" target="_blank">AAJA19</a> Conference in Atlanta, GA next week. If you're there, say hello! 👋</p>
+        <div className="text-block-wide contact">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/alexander-lim/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/alexanderlim9" target="_blank">
+              Github
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/journalims" target="_blank">
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="mailto:lim.a@husky.neu.edu">
+              Email
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
     </div>
   </Layout>
 )
