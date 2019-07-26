@@ -124,7 +124,7 @@ const IndexPage = () => (
           <div className="photo"></div>
           <div className="bio">
             <p>
-              So, like I said, I’m about to graduate from Northeastern where I study computer science and design. Originally, I just wanted to be a traditional designer-developer, but then I found data and then I found journalism.
+              So, like I said, I’m about to graduate from Northeastern where I study computer science and design. Originally, I just wanted to be a traditional designer-developer, but then I found data, and then I found journalism.
             </p>
             <p>
               I see so much potential to leverage data and the digital space to tell stories that need to be heard in ways that make sense. As I get ready to kickstart my career, I’m thinking about how my background&mdash;technical and personal&mdash;can influence the work that I do.
