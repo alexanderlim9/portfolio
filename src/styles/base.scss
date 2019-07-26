@@ -90,7 +90,7 @@ p {
 
 h1.hero {
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1.2em;
 
     @include media($sm) {
@@ -103,13 +103,19 @@ h1.hero {
 }
 
 p.hero {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
+
     a {
         @include body-text;
     }
     a:hover {
         color: $active;
+    }
+
+    @include media($sm) {
+        font-size: 24px;
+        line-height: 32px;
     }
 }
 
