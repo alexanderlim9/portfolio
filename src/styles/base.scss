@@ -160,6 +160,14 @@ body {
     @include media($sm) {
         padding: 10%;
     }
+
+    @include media($lg) {
+        padding: 10% 15%;
+    }
+
+    @include media($xl) {
+        padding: 10% 20%;
+    }
 }
 
 .half-page-block_image {
