@@ -114,7 +114,7 @@ const IndexPage = () => (
             <a href="https://alexanderlim9.github.io/concerts/" target="_blank">Concerts</a>
           </h3>
           <p>
-            I went to my first concert in 2014 (it was Arcade Fire). I’m a big live music fan and frequent concerts often, so I decided to document them more formally before I start to forget. I had been keeping a list in a note doc but took the opportunity to apply the same tech stack I learned from Since Parkland. This version is built in Jekyll with data from AirTable and is a work in progress.
+            I went to my first concert in 2014 (it was Arcade Fire). I’m a big live music fan and frequent concerts often, so I decided to document them more formally before I start to forget. I took this as opportunity to apply the same tech stack I learned from Since Parkland. This version is built in Jekyll with data from AirTable and is a work in progress: more details, photos, and videos to come.
           </p>
         </div>
       </div>
@@ -130,14 +130,14 @@ const IndexPage = () => (
               I see so much potential to leverage data and the digital space to tell stories that need to be heard in ways that make sense. As I get ready to kickstart my career, I’m thinking about how my background&mdash;technical and personal&mdash;can influence the work that I do.
             </p>
             <p>
-              When I’m not thinking about my career, I’m thinking about bagels from Long Island where I grew up.  I’m a big design and data nerd, and I go to a lot of concerts. Ask me about coffee or tea, or we can get some sometime!
+              When I’m not thinking about work, I’m thinking about bagels from Long Island where I grew up.  I’m a big design and data nerd, and I <i>love</i> trains. Ask me about coffee or tea, or we can get some sometime!
             </p>
           </div>
         </div>
       </div>
       <div className="text-block-wide">
         <h2 className="section-header">Contact</h2>
-        <p><b>Let's get in touch!</b><br/>I'll be attending the <a href="https://www.aaja19.org/" target="_blank">AAJA19</a> Conference in Atlanta, GA next week. If you're there, say hello! 👋</p>
+        <p><b>Let's get in touch!</b><br/>I'll be attending the <a href="https://www.aaja19.org/" target="_blank">AAJA19</a> Conference in Atlanta this week. If you're there, say hello! 👋</p>
         <div className="text-block-wide contact">
         <ul>
           <li>
