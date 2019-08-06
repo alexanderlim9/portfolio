@@ -76,6 +76,15 @@ const IndexPage = () => (
         <h2 className="section-header">Projects</h2>
         <div className="project">
           <h3>
+            <a href="https://www.arnoldventures.org/grants" target="_blank">Arnold Ventures</a>{" "}
+            &mdash; Upstatement
+          </h3>
+          <p>
+            Arnold Ventures sought to improve the way they communicate their grant data. I led and worked in all steps of the design process from research and data analysis to design and finally development to create the "Grants" page and visualize this data. The visualization was built in D3.js and integrated into a Craft CMS backend.
+          </p>
+        </div>
+        <div className="project">
+          <h3>
             <a href="https://sinceparkland.org/" target="_blank">
               Since Parkland
             </a>{" "}
@@ -89,15 +98,6 @@ const IndexPage = () => (
             storytelling experience. I joined the project at the start of development and
             focused on integrating AirTable data with our Jekyll site and built
             the search experience using the Algolia API.
-          </p>
-        </div>
-        <div className="project">
-          <h3>
-            <a href="https://www.arnoldventures.org/grants" target="_blank">Arnold Ventures</a>{" "}
-            &mdash; Upstatement
-          </h3>
-          <p>
-            Arnold Ventures sought to improve the way they communicate their grant data. I worked in all steps of the design process from research and data analysis to design and finally development to create the "Grants" page and visualize this data. The visualization was built in D3.js and integrated into a Craft CMS backend.
           </p>
         </div>
         <div className="project">
