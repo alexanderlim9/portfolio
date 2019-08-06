@@ -137,7 +137,7 @@ const IndexPage = () => (
       </div>
       <div className="text-block-wide">
         <h2 className="section-header">Contact</h2>
-        <p><b>Let's get in touch!</b><br/>I'm comfortable with devs and designers, but around journalists I get nervous. I'm still learning how to pitch myself as a developer-journalist, and I'm all ears for advice on how to carve out that path. 🛣️</p>
+        <p><b>Let's get in touch!</b><br/>I'm comfortable with devs and designers, but around journalists I get nervous. I'm still learning how to pitch myself as a developer-journalist, and I'm all ears for advice on how to carve out that path. 🛤️</p>
         <div className="text-block-wide contact">
         <ul>
           <li>
