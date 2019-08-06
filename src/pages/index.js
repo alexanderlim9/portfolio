@@ -88,7 +88,7 @@ const IndexPage = () => (
             to address the issue of gun violence through an interactive,
             storytelling experience. I joined the project at the start of development and
             focused on integrating AirTable data with our Jekyll site and built
-            the search functionality using the Algolia API.
+            the search experience using the Algolia API.
           </p>
         </div>
         <div className="project">
@@ -97,7 +97,7 @@ const IndexPage = () => (
             &mdash; Upstatement
           </h3>
           <p>
-            Arnold Ventures sought to improve the way they communicate their grant data. I worked in all steps of the design process from research and data analysis to design and finally development to visualize this data. The visualization was built in D3.js and integrated into a Craft CMS backend.
+            Arnold Ventures sought to improve the way they communicate their grant data. I worked in all steps of the design process from research and data analysis to design and finally development to create the "Grants" page and visualize this data. The visualization was built in D3.js and integrated into a Craft CMS backend.
           </p>
         </div>
         <div className="project">
@@ -124,13 +124,13 @@ const IndexPage = () => (
           <div className="photo"></div>
           <div className="bio">
             <p>
-              So, like I said, I’m about to graduate from Northeastern where I study computer science and design. Originally, I just wanted to be a traditional designer-developer, but then I found data, and then I found journalism.
+              I’m about to graduate from Northeastern where I study computer science and design. I started out as a traditional front-end developer and found a passion for data visualization. What I lacked, though, was purpose. And I found that purpose in journalism.
             </p>
             <p>
-              I see so much potential to leverage data and the digital space to tell stories that need to be heard in ways that make sense. As I get ready to kickstart my career, I’m thinking about how my background&mdash;technical and personal&mdash;can influence the work that I do.
+              I see so much potential to leverage data and the digital space to tell stories that need to be heard. Journalism is evolving, and I’m right there with it. As I move forward, I’m thinking about how my background&mdash;technical and personal&mdash;can influence the work that I do and the impact I can have as a developer.
             </p>
             <p>
-              When I’m not thinking about work, I’m thinking about bagels from Long Island where I grew up.  I’m a big design and data nerd, and I <i>love</i> trains. Ask me about coffee or tea, or we can get some sometime!
+              When I’m not thinking about work, I’m thinking about bagels from Long Island where I grew up.  I’m a big design and data nerd, and I <i>love</i> trains. I also care a lot about diversity and representation, and I’m a proud member of <a href="https://www.aaja.org/" target="_blank">AAJA</a>. Ask me what I know about coffee or tea, or we can get some sometime!
             </p>
           </div>
         </div>
